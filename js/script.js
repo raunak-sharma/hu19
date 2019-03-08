@@ -22,6 +22,10 @@
 
     });
 
+    window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+    });
 
     // timestamp for Monday, 1 April 2019 03:30:00 = 1554089400
 })();
