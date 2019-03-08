@@ -76,18 +76,10 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: -webkit-linear-gradient(rgb(204, 124, 33),  rgb(185, 34, 92), rgb(34, 185, 148));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .section1 {
     min-height: 100vh;
-}
-
-#displayMoment {
-    font-size: 55px;
-    font-weight: bold;
 }
 
 /* Small screens */
@@ -101,9 +93,17 @@ nav ul li {
         font-size: 5.5vh;
         text-align: center;
         position: relative;
-        top: -100px;
+        top: -80px;
     }
 
+    .header-logo, .header-text {
+        color: rgba(0, 255, 149, 0.582);
+    }
+
+    #displayMoment {
+        font-size: 35px;
+        font-weight: bold;
+    }
 }
 
 /* Large screens */
@@ -116,5 +116,16 @@ nav ul li {
     .header-content .header-text h1 {
         font-size: 8vh;
         text-align: center;
+    }
+
+    .header-logo, .header-text {
+        background: -webkit-linear-gradient(rgb(204, 124, 33),  rgb(185, 34, 92), rgb(34, 185, 148));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #displayMoment {
+        font-size: 55px;
+        font-weight: bold;
     }
 }
