@@ -324,6 +324,10 @@ nav ul li:hover {
 .timing-section {
     margin: 0px;
     color: black;
+    background-image: url(../sources/imgs/logo.png);
+    background-repeat: no-repeat;
+    background-position-x: 450px;
+    background-position-y: -200px;
     font-family: chunkfive;
 }
 
@@ -436,6 +440,11 @@ div.col-lg-7 {
     h1.about-header {
         padding: 10vh 0;
     }
+
+    .timing-section {
+        background-position-x: 50px;
+        background-position-y: -200px;
+    }
 }
 
 /* Large screens */
@@ -502,6 +511,10 @@ div.col-lg-7 {
         border-radius: .6rem;
     }
 
+    .timing-section {
+        background-position-x: 450px;
+        background-position-y: -200px;
+    }
 
     .detail-col .detail-container:hover {
     background-color: red;
