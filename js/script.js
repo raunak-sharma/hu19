@@ -26,14 +26,15 @@
         }, interval);
         */
 
-        // Look for .hamburger
-        var hamburger = document.querySelector(".hamburger");
-        // On click
+        let hamburger = document.querySelector(".hamburger");
+        let navbar = document.querySelector("nav");
+        let navitems = document.querySelector("nav .row");
         hamburger.addEventListener("click", function() {
-            // Toggle class "is-active"
             hamburger.classList.toggle("is-active");
-            // Do something else, like open/close menu
+            navbar.classList.toggle("nav-hidden");
+            navitems.classList.toggle("nav-items-hidden");
         });
+
 
     });
 
