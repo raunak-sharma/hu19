@@ -219,6 +219,7 @@ nav ul li:hover {
 .nav-items-hidden {
     opacity: 0;
     transition: 1s;
+    z-index: -1;
 }
 
 /* end of navbar */
@@ -302,6 +303,13 @@ nav ul li:hover {
     min-height: 100vh;
 }
 
+.detail-col .detail-container:hover {
+    background-color: red;
+    -webkit-box-shadow: 9px 8px 31px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 8px 31px 0px rgba(0,0,0,0.75);
+    box-shadow: 9px 8px 31px 0px rgba(0,0,0,0.75);
+}
+
 .detail-col h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -315,6 +323,7 @@ nav ul li:hover {
 
 .timing-section {
     margin: 0px;
+    color: black;
     font-family: chunkfive;
 }
 
@@ -325,6 +334,33 @@ div.timer-col.col-lg-6, div.detail-col.col-lg-6 {
     justify-content: center;
     align-items: center;
 }
+
+.detail-col h1.about-header {
+    font-size: 8vh;
+    font-family: blackoutMid;
+}
+
+h1.countdown {
+    width: 75%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #FAFBFC;
+    background-color: #FAFBFC;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    border-radius: .8rem;
+}
+
+.detail-col h1:nth-child(1) {
+    text-align: center;
+}
+
 
 /* END OF SECTION2 */
 
@@ -383,12 +419,18 @@ div.col-lg-7 {
     }
 
     .detail-col {
-        padding: 10vh 10vw 15vh 8vw;
+        padding: 5vh 2vw 5vh 2vw;
     }
 
     .detail-col h1 {
         line-height: 4vh;
         font-size: 16px;
+    }
+
+    .detail-container {
+        padding: 5vh 4vw 5vh 4vw;
+        box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+        border-radius: .6rem;
     }
 
     h1.about-header {
@@ -441,9 +483,31 @@ div.col-lg-7 {
         height: 30px;
     }
 
+    .detail-col {
+        padding: 0 5vw;
+    }
+
+    .detail-col h1:nth-child(1) {
+        padding: 11vh 0 0 0 ;
+    }
+
     .detail-col h1 {
         line-height: 4vh;
         font-size: 25px;
-        padding: 5vh 5vw 5vh 5vw;
+        padding: 6vh 5vw 6vh 5vw;
     }
+
+    .detail-col .detail-container {
+        box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+        border-radius: .6rem;
+    }
+
+
+    .detail-col .detail-container:hover {
+    background-color: red;
+    -webkit-box-shadow: 9px 8px 31px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 8px 31px 0px rgba(0,0,0,0.75);
+    box-shadow: 9px 8px 31px 0px rgba(0,0,0,0.75);
+}
+
 }

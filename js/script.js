@@ -21,8 +21,11 @@
             duration = moment.duration(duration - interval, 'milliseconds');
             let days = duration.days(), hrs = duration.hours(), mins = duration.minutes(), secs = duration.seconds();
 
-            document.getElementsByClassName('countdown')[0].innerHTML = "<p>" + days + " DAYS </br> "
-                + hrs + " Hours</br> " + mins + " Mins</br> " + secs + " Secs</p>";
+            document.getElementsByClassName('countdown')[0].innerHTML = 
+            "<p style=\"font-family:'lmonoULight'\"><span style='font-size: 8vh;'>" + days + "</span> Days </br> <span style='font-size: 8vh;'>"
+                + hrs + "</span> Hours</br> <span style='font-size: 8vh;'>" 
+                + mins + "</span> Minutes</br> <span style='font-size: 8vh;'>" 
+                + secs + "</span> Seconds</p>";
         }, 1000);
 
 
