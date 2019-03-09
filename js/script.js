@@ -1,5 +1,11 @@
 (function () {
 
+    window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+    });
+    // timestamp for Monday, 1 April 2019 03:30:00 = 1554089400
+
     document.addEventListener('DOMContentLoaded', function () {
 
         var eDisplayMoment = document.getElementById('displayMoment');
@@ -20,12 +26,15 @@
         }, interval);
         */
 
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function() {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
+
     });
 
-    window.addEventListener("load", function () {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden";
-    });
-
-    // timestamp for Monday, 1 April 2019 03:30:00 = 1554089400
 })();

@@ -11,6 +11,7 @@ body {
     overflow-x: hidden;
 }
 
+/* START OF LOADER */
 .loader {
     position: fixed;
     z-index: 999999;
@@ -36,6 +37,10 @@ body {
     }
 }
 
+/* END OF LOADER */
+
+
+/* START OF HEADER */
 .header {
     height: 100vh;
     max-width: 960px;
@@ -61,11 +66,32 @@ body {
     padding: 0px;
 }
 
+
+/* start of navbar */
+
+.header .hamburger {
+    position: absolute;
+    z-index: 999999;
+}
+
+.hamburger .hamburger-inner,
+.hamburger .hamburger-inner::after,
+.header .hamburger span.hamburger-inner::after {
+    background-color: rgb(194, 97, 126);
+}
+
+
+.hamburger .hamburger-inner::before,
+.header .hamburger span.hamburger-inner::before {
+    background-color: rgb(96, 2, 184);
+}
+
 nav {
     position: absolute;
     top: 0;
     left: 0;
     color: white;
+    background-color: black;
     z-index: 555555;
     width: 100%;
 }
@@ -79,6 +105,8 @@ nav ul li {
     list-style-type: none;
     text-align: center;
 }
+/* end of navbar */
+
 
 .header-content {
     position: absolute;
@@ -103,33 +131,29 @@ nav ul li {
     justify-content: center;
 }
 
-.section1 {
-    min-height: 100vh;
-}
-
 /* for arrow */
 /* inspired from https://codepen.io/raf187/pen/BvgGRQ */
-.arrow{
+.arrow {
     position: absolute;
     top: 88%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-.arrow span{
+.arrow span {
     display: block;
-    border-bottom: 5px solid rgb(255, 6, 81);
+    border-bottom: 5px solid rgb(235, 119, 154);
     border-right: 5px solid rgb(135, 6, 255);
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
 }
 
-.arrow span:nth-child(2){
+.arrow span:nth-child(2) {
     animation-delay: -0.2s;
 }
 
-.arrow span:nth-child(3){
+.arrow span:nth-child(3) {
     animation-delay: -0.4s;
 }
 
@@ -146,13 +170,31 @@ nav ul li {
         transform: rotate(45deg) translate(20px,20px);
     }
 }
-/* for arrow end*/
+/* end of arrow*/
+
+/* END OF LOADER */
+
+
+
+/* START OF SECTION2 */
+
+.section2 {
+    min-height: 100vh;
+}
+
+/* END OF SECTION2 */
+
 
 /* Small screens */
 @media screen and (max-width: 720px) {
 
     .loader img {
         width: 250px;
+    }
+
+    .header .hamburger {
+        top: 25px;
+        right: 25px;
     }
 
     .header-content .header-logo img {
@@ -176,13 +218,18 @@ nav ul li {
     }
 
     .arrow span {
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
     }
 }
 
 /* Large screens */
 @media screen and (min-width: 720px) {
+
+    .header .hamburger {
+        top: 50px;
+        right: 50px;
+    }
 
     .header-content .header-logo img {
         width: 51vh;
