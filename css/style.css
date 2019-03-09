@@ -15,6 +15,51 @@ body {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: blackoutMid;
+    src: url(../sources/fonts/blackout-master/Blackout\ Midnight.ttf);
+}
+
+@font-face {
+    font-family: blackoutSun;
+    src: url(../sources/fonts/blackout-master/Blackout\ Sunrise.ttf);
+}
+
+@font-face {
+    font-family: chunkfive;
+    src: url(../sources/fonts/chunk-master/ChunkFive-Regular.otf);
+}
+
+@font-face {
+    font-family: chunkfiveP;
+    src: url(../sources/fonts/chunk-master/Chunk\ Five\ Print.otf);
+}
+
+@font-face {
+    font-family: lmonoBold;
+    src: url(../sources/fonts/league-mono-master/ttf/LeagueMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: lmonoLight;
+    src: url(../sources/fonts/league-mono-master/ttf/LeagueMono-Light.ttf);
+}
+
+@font-face {
+    font-family: lmonoThin;
+    src: url(../sources/fonts/league-mono-master/ttf/LeagueMono-Thin.ttf);
+}
+
+@font-face {
+    font-family: lmonoULight;
+    src: url(../sources/fonts/league-mono-master/ttf/LeagueMono-UltraLight.ttf);
+}
+
+@font-face {
+    font-family: rafale;
+    src: url(../sources/fonts/rafale/Rafale-BG.otf);
+}
+
 /* START OF LOADER */
 .loader {
     position: fixed;
@@ -75,18 +120,21 @@ body {
 
 .header .hamburger {
     position: fixed;
-    z-index: 999999;
+    z-index: 999998;
 }
 
-.hamburger .hamburger-inner,
-.hamburger .hamburger-inner::after,
-.header .hamburger span.hamburger-inner::after {
-    background-color: rgb(194, 97, 126);
+.hamburger .hamburger-inner {
+    background-color: rgb(101, 35, 131);
 }
 
 .hamburger .hamburger-inner::before,
 .header .hamburger span.hamburger-inner::before {
-    background-color: rgb(96, 2, 184);
+    background-color: rgb(126, 2, 184);
+}
+
+.hamburger .hamburger-inner::after,
+.header .hamburger span.hamburger-inner::after {
+    background-color: rgb(47, 0, 255);
 }
 
 .hamburger span.hamburger-inner::after {
@@ -106,9 +154,9 @@ nav {
     color: white;
 
     background-color: rgba(0, 0, 0, 0.89);
-    font-family: 'Titillium Web', sans-serif;
+    font-family: lmonoThin;
     letter-spacing: 5px;
-    font-weight: 200;
+    font-weight: 100;
 
     z-index: 99999;
     transition: 0.8s;
@@ -188,9 +236,12 @@ nav ul li:hover {
     color: white;
     background-color: rgba(29, 15, 46, 0.877);
     z-index: 9999;
-    font-family: 'Thasadith', sans-serif;
+    font-family: blackoutSun;
     font-weight: 400;
+}
 
+#displayMoment {
+    font-family: lmonoULight;
 }
 
 .header-logo, .header-text {
@@ -246,12 +297,40 @@ nav ul li:hover {
 
 /* START OF SECTION2 */
 
-.section2 {
+.detail-col {
     min-height: 100vh;
+}
+
+.detail-col h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.detail-col h1:nth-child(1) {
+    font-family: chunkfive;
+    font-weight: 300;
+    font-size: 5vh;
+}
+
+.timing-section {
+    margin: 0px;
+    font-family: chunkfive;
+}
+
+div.timer-col.col-lg-6, div.detail-col.col-lg-6 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* END OF SECTION2 */
 
+div.col-lg-7 {
+    padding: 0;
+    width: 100%;
+}
 
 /* Small screens */
 @media screen and (max-width: 720px) {
@@ -273,7 +352,7 @@ nav ul li:hover {
         width: 35vh;
     }
 
-    .header-content .header-text h1 {
+    .header-content .header-text {
         font-size: 5.5vh;
         text-align: center;
         position: relative;
@@ -285,13 +364,25 @@ nav ul li:hover {
     }
 
     #displayMoment {
-        font-size: 35px;
-        font-family: 'Titillium Web', sans-serif;
+        font-size: 3vh;
     }
 
     .arrow span {
         width: 16px;
         height: 16px;
+    }
+
+    .detail-col {
+        padding: 10vh 10vw 15vh 8vw;
+    }
+
+    .detail-col h1 {
+        line-height: 4vh;
+        font-size: 16px;
+    }
+
+    h1.about-header {
+        padding: 10vh 0;
     }
 }
 
@@ -323,12 +414,17 @@ nav ul li:hover {
     }
 
     #displayMoment {
-        font-size: 55px;
-        font-family: 'Titillium Web', sans-serif;
+        font-size: 3.5vh;
     }
 
     .arrow span {
         width: 30px;
         height: 30px;
+    }
+
+    .detail-col h1 {
+        line-height: 4vh;
+        font-size: 25px;
+        padding: 5vh 5vw 5vh 5vw;
     }
 }
