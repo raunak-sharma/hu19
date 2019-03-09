@@ -228,6 +228,7 @@ nav ul li:hover {
     position: absolute;
     top: 0;
     left: 0;
+    margin: 0;
     height: 100vh;
     width: 100%;
     display: flex;
