@@ -113,6 +113,8 @@ nav {
     z-index: 99999;
     transition: 0.8s;
     font-size: 5vh;
+    opacity: 1;
+    transition: 1s;
 }
 
 nav ul {
@@ -157,13 +159,18 @@ nav ul li:hover {
 }
 
 .nav-hidden {
-    height: 0px;
+    opacity: 0;
     transition: 0.5s;
 }
 
+.nav-items-show {
+    opacity: 1;
+    transition: 1.5s;
+}
+
 .nav-items-hidden {
-    display: none;
-    transition: 0.5s;
+    opacity: 0;
+    transition: 1s;
 }
 
 /* end of navbar */

@@ -33,6 +33,7 @@
             hamburger.classList.toggle("is-active");
             navbar.classList.toggle("nav-hidden");
             navitems.classList.toggle("nav-items-hidden");
+            navitems.classList.toggle("nav-items-show");
         });
 
 
