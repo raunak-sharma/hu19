@@ -55,11 +55,6 @@ body {
     src: url(../sources/fonts/league-mono-master/ttf/LeagueMono-UltraLight.ttf);
 }
 
-@font-face {
-    font-family: rafale;
-    src: url(../sources/fonts/rafale/Rafale-BG.otf);
-}
-
 /* START OF LOADER */
 .loader {
     position: fixed;
@@ -166,7 +161,6 @@ nav {
 nav ul {
     margin: 0px;
     height: 100%;
-    padding: 28vh 0px 32vh 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -383,6 +377,10 @@ div.col-lg-7 {
         bottom: 80px;
     }
 
+    nav ul {
+        padding: 22vh 0px 32vh 0px;
+    }
+
     .loader img {
         width: 250px;
     }
@@ -455,6 +453,16 @@ div.col-lg-7 {
         text-align: center;
         margin: auto;
         font-size: 16px;
+    }
+
+    nav ul {
+        margin: 0px;
+        height: 100%;
+        padding: 28vh 0px 32vh 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .header .hamburger {

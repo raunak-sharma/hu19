@@ -1,7 +1,5 @@
 Fonts imported :
 
-rafale
-
 lmonoULight
 lmonoThin
 lmonoLight
