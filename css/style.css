@@ -331,12 +331,17 @@ nav ul li:hover {
     font-family: chunkfive;
 }
 
-div.timer-col.col-lg-6, div.detail-col.col-lg-6 {
+div.timer-col.col-lg-5, div.detail-col.col-lg-7 {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+
+div.timer-col.col-lg-6 {
+    padding: 0;
 }
 
 .detail-col h1.about-header {
@@ -345,12 +350,12 @@ div.timer-col.col-lg-6, div.detail-col.col-lg-6 {
 }
 
 h1.countdown {
-    width: 75%;
-    height: 50%;
+    min-width: 85%;
+    min-height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    padding: 4vh 5vw;
     color: #FAFBFC;
     background-color: #FAFBFC;
     background: #8E2DE2;  /* fallback for old browsers */
@@ -512,8 +517,8 @@ div.col-lg-7 {
     }
 
     .timing-section {
-        background-position-x: 450px;
-        background-position-y: -200px;
+        background-position-x: 650px;
+        background-position-y: -150px;
     }
 
     .detail-col .detail-container:hover {
