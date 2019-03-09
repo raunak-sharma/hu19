@@ -339,6 +339,15 @@ div.col-lg-7 {
         display: none;
     }
 
+    #nav-copyright {
+        left: 0;
+        text-align: center;
+        margin: auto;
+        font-size: 16px;
+        position: absolute;
+        bottom: 80px;
+    }
+
     .loader img {
         width: 250px;
     }
@@ -391,6 +400,15 @@ div.col-lg-7 {
 
     nav div.col-lg-5 {
         height: 100vh;
+    }
+
+    #nav-copyright {
+        position: relative;
+        bottom: -16vh;
+        left: -48vw;
+        text-align: center;
+        margin: auto;
+        font-size: 16px;
     }
 
     .header .hamburger {
