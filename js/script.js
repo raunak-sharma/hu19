@@ -44,9 +44,9 @@
                 + "<span style=\"font-size: 4vh\">Starts in </span></br>"
                 + "<span style='font-size: 8vh;'>"
                 + days + "</span> Days </br> <span style='font-size: 8vh;'>"
-                + hrs + "</span> Hours</br> <span style='font-size: 8vh;'>"
-                + mins + "</span> Minutes</br> <span style='font-size: 8vh;'>"
-                + secs + "</span> Seconds</p>";
+                + hrs + "</span> HRS</br> <span style='font-size: 8vh;'>"
+                + mins + "</span> MINS</br> <span style='font-size: 8vh;'>"
+                + secs + "</span> SECS</p>";
         }, 1000);
 
 

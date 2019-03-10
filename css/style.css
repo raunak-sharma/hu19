@@ -312,7 +312,8 @@ nav ul li:hover {
 
 .timing-section {
     margin: 0px;
-    color: black;
+    color: rgb(59, 59, 59);
+    background-color: rgb(255, 255, 255);
     background-image: url(../sources/imgs/logo.png);
     background-repeat: no-repeat;
     background-position-x: 450px;
