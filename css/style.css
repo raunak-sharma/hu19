@@ -1,20 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-*:focus {
-    outline: 0 !important;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0px;
-    overflow-x: hidden;
-}
-
 @font-face {
     font-family: blackoutMid;
     src: url(../sources/fonts/blackout-master/Blackout\ Midnight.ttf);
@@ -55,6 +38,28 @@ body {
     src: url(../sources/fonts/league-mono-master/ttf/LeagueMono-UltraLight.ttf);
 }
 
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+div.col-lg-7 {
+    padding: 0;
+    width: 100%;
+}
+
 /* START OF LOADER */
 .loader {
     position: fixed;
@@ -86,7 +91,7 @@ body {
 
 /* START OF HEADER */
 .header {
-    height: 100vh;
+    min-height: 100vh;
     max-width: 960px;
     margin: auto;
 }
@@ -215,7 +220,6 @@ nav ul li:hover {
 }
 
 /* end of navbar */
-
 
 .header-content {
     position: absolute;
@@ -353,16 +357,80 @@ h1.countdown {
     text-align: center;
 }
 
+.detail-col h1:nth-child(2) {
+    text-align: justify;
+}
+
+.detail-container, .timer-col {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.detail-container.fade-in, .timer-col.fade-in, .header-content.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* END OF ABOUT SECTION */
 
-div.col-lg-7 {
-    padding: 0;
-    width: 100%;
+/* START OF FOOTER */
+
+footer {
+    max-height: 55vh;
 }
+
+.foot1{
+    background-color: #101010;
+    color: #e3e6f2;
+    padding: 8vh 5vw;
+}
+
+.footer-head {
+    font-family: blackoutSun;
+}
+
+.foot1 p, .foot2 {
+    font-family: lmonoULight;
+}
+
+.footer-head1 {
+    font-family: lmonoULight;
+    font-size: 6vh;
+    color: rgb(32, 85, 170);
+}
+
+.foot2 {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    background-color: black;
+    color: #e3e6f2;
+}
+
+.foot2.col-lg-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot2 p {
+    margin: 0;
+}
+
+/* END OF FOOTER */
 
 /* Small screens */
 @media screen and (max-width: 720px) {
+
+    .footer-head {
+        padding-top: 11vh;
+    }
+    
+    .foot1.col-lg-4:nth-child(2) {
+        text-align: center;
+    }
 
     nav div.col-lg-5 {
         display: none;

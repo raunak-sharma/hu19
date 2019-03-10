@@ -1,0 +1,240 @@
+<div class="events" style="margin-bottom:50px">
+<p><h1 align="center" class="glow"> Events</h1></p>
+
+<div class="flip-card" style="display:inline-block" >
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="gallery00.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Technical</h1>
+      <p>Day 1</p>
+      <p>Day 2</p>
+    </div>
+  </div>
+  <!--<p class = "Caption"><h1> Technical </h1> </p>-->
+</div>
+<div class="flip-card" style="display:inline-block">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="gallery00.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Cultural</h1>
+      <p>Day 1</p>
+      <p>Day 2</p>
+    </div>
+  </div>
+    <!--<p class = "Caption"><h1> Cultural </h1> </p>-->
+</div>
+<div class="flip-card" style="display:inline-block;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="gallery00.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Guest performance</h1> 
+      <p>Day 1</p> 
+      <p>Day 2</p>
+    </div>
+  </div>
+    <!--<p class = "Caption"><h1> Guest Performance </h1> </p>-->
+
+</div>
+</div>
+
+
+<div class="Gallery" style="float:bottom;position:absolute;width:100%;margin-top:25px;">
+<h1 align="center" class="glow">Gallery</h1>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="gallery00.jpg" style="width:100%" class="ss">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="gallery00.jpg" style="width:100%" class="ss">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="gallery00.jpg" style="width:100%" class="ss">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+	</div>
+	</body>
+
+<style>
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  <!--border: 1px solid #f1f1f1;-->
+  perspective: 1000px; 
+  margin-right :2em;
+  margin-left : 6em;
+  margin-bottom:6em;
+  padding-top:3em;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:powderblue;
+  color: white;
+  width:300px;height:300px;
+  transform: rotateY(180deg);
+}
+
+.Captions {
+  padding-left :10em;
+  margin-bottom:6em
+}
+
+.glow {
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #F0E68C, 0 0 20px #F0E68C, 0 0 30px #F0E68C, 0 0 40px #F0E68C, 0 0 50px #F0E68C, 0 0 60px #F0E68C, 0 0 70px #F0E68C;
+  }
+
+  to {
+    text-shadow: 0 0 20px #F0E68C, 0 0 30px #ff4da6, 0 0 40px #F0E68C, 0 0 50px #F0E68C, 0 0 60px #F0E68C, 0 0 70px #F0E68C, 0 0 80px #F0E68C;
+  }
+}
+
+.mySlides {display: none;}
+.ss {vertical-align: middle;}
+
+.slideshow-container {
+padding-top:2em;
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: powderblue;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1500); // Change image every 2 seconds
+}
+</script>
