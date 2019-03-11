@@ -25,6 +25,13 @@
             .setClassToggle('#details-t', 'fade-in')
             .addTo(controller);
 
+            let galleryT = new ScrollMagic.Scene({
+                triggerElement : '#gal-head'
+            })
+            .setClassToggle('#gal-head', 'fade-in')
+            .addTo(controller);
+
+
         /* END OF ANIMATION DEFINITIONS */
 
         // timestamp for Monday, 1 April 2019 03:30:00 = 1554089400
@@ -58,6 +65,8 @@
             navbar.classList.toggle("nav-show");
         });
 
+
+        /* PRC SCRIPT */
     });
 
 })();

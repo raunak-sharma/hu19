@@ -12,3 +12,19 @@ blackoutMid
 blackoutSun
 
 font-family: 'Open Sans', sans-serif; 300, 400
+
+    background: #f953c6;
+    background: -webkit-linear-gradient(to right, #b91d73, #f953c6);
+    background: linear-gradient(to right, #b91d73, #f953c6);
+
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+
+    background: #396afc;
+    background: -webkit-linear-gradient(to top, #2948ff, #396afc);
+    background: linear-gradient(to top, #2948ff, #396afc);
+
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
