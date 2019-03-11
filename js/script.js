@@ -71,8 +71,6 @@
             navbar.classList.toggle("nav-show");
         });
 
-
-        /* PRC SCRIPT */
     });
 
 })();
