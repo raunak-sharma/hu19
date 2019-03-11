@@ -25,7 +25,6 @@
             .setClassToggle('#details-t', 'fade-in')
             .addTo(controller);
 
-
         /* END OF ANIMATION DEFINITIONS */
 
         // timestamp for Monday, 1 April 2019 03:30:00 = 1554089400
@@ -53,12 +52,10 @@
         // navbar toggle
         let hamburger = document.querySelector(".hamburger");
         let navbar = document.querySelector("nav");
-        let navitems = document.querySelector("nav .row");
         hamburger.addEventListener("click", function() {
             hamburger.classList.toggle("is-active");
             navbar.classList.toggle("nav-hidden");
-            navitems.classList.toggle("nav-items-hidden");
-            navitems.classList.toggle("nav-items-show");
+            navbar.classList.toggle("nav-show");
         });
 
     });

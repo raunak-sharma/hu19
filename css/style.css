@@ -149,23 +149,29 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
     width: 100%;
     color: white;
     background-color: rgba(0, 0, 0, 0.89);
     font-family: lmonoThin;
     letter-spacing: 5px;
     font-weight: 100;
-    z-index: 99999;
     transition: 0.8s;
     font-size: 5vh;
-    opacity: 1;
     transition: 1s;
+}
+
+.nav-hidden {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.nav-show {
+    opacity: 1;
+    z-index: 999997;
 }
 
 nav ul {
     margin: 0px;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,22 +207,6 @@ nav ul li:hover {
     transition: 0.5s;
     color: rgb(92, 92, 92);
     cursor: pointer;
-}
-
-.nav-hidden {
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.nav-items-show {
-    opacity: 1;
-    transition: 1.5s;
-}
-
-.nav-items-hidden {
-    opacity: 0;
-    transition: 1s;
-    z-index: -1;
 }
 
 /* end of navbar */
@@ -428,7 +418,7 @@ footer {
     .footer-head {
         padding-top: 11vh;
     }
-    
+
     .foot1.col-lg-4:nth-child(2) {
         text-align: center;
     }
@@ -512,7 +502,7 @@ footer {
 @media screen and (min-width: 720px) {
 
     nav div.col-lg-5 {
-        height: 100vh;
+        max-height: 100vh;
     }
 
     #nav-copyright {
