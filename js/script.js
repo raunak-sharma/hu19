@@ -30,13 +30,12 @@
             })
             .setClassToggle('#gal-head', 'fade-in')
             .addTo(controller);
-            
+
             let detailsT = new ScrollMagic.Scene({
                 triggerElement : '#details-eve'
             })
             .setClassToggle('#details-eve', 'fade-in')
             .addTo(controller);
-
 
         /* END OF ANIMATION DEFINITIONS */
 

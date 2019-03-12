@@ -155,6 +155,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
     color: white;
     background-color: rgba(0, 0, 0, 0.89);
     font-family: lmonoThin;
@@ -212,6 +213,11 @@ nav ul li:hover {
     transition: 0.5s;
     color: rgb(92, 92, 92);
     cursor: pointer;
+}
+
+nav a, nav a:visited {
+    color: white;
+    text-decoration: none;
 }
 
 /* end of navbar */
@@ -371,6 +377,7 @@ h1.countdown {
 
 .events {
     min-height: 55vh;
+    margin: 0;
     background-color: rgba(235, 247, 253, 0.678);
 }
 
@@ -393,7 +400,6 @@ h1.countdown {
 
 .event-card {
     color: rgba(235, 247, 253, 0.678);
-    margin: 8vh 0vw;
     min-height: 34vh;
     padding: 5vh 2vw;
     border-radius: 22px;
@@ -416,7 +422,8 @@ h1.countdown {
 
 .event-card h1 {
     font-size: 3vh;
-    font-family: lmonoULight;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 .fas {
@@ -427,10 +434,12 @@ h1.countdown {
 .event-card button {
     text-align: center;
     border-radius: 11px;
+    color: rgb(247, 9, 155);
     background-color: rgba(235, 247, 253, 0.678);
     border: 0px;
     padding: 0.8vh 2vw;
-    font-family: lmonoULight;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     transition: 0.8s;
 }
 
@@ -575,8 +584,8 @@ footer {
     }
 
     .header .hamburger {
-        top: 25px;
-        right: 25px;
+        top: 20px;
+        left: 15px;
     }
 
     .header-content .header-logo img {
@@ -685,7 +694,7 @@ footer {
 
     .header .hamburger {
         top: 50px;
-        right: 50px;
+        left: 50px;
     }
 
     .header-content .header-logo img {
@@ -742,6 +751,7 @@ footer {
     }
 
     .event-card {
+        margin: 8vh 2vw;
         display: inline-block;
         width: calc(33% - 5vw);
     }
