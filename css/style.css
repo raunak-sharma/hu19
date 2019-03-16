@@ -95,6 +95,7 @@ div.col-lg-7 {
 
 
 /* START OF HEADER */
+
 .header {
     min-height: 100vh;
     max-width: 960px;
@@ -120,9 +121,7 @@ div.col-lg-7 {
     padding: 0px;
 }
 
-
 /* start of navbar */
-
 .header .hamburger {
     position: fixed;
     z-index: 999998;
@@ -219,9 +218,7 @@ nav a, nav a:visited {
     color: white;
     text-decoration: none;
 }
-
 /* end of navbar */
-
 
 .header-content {
     position: absolute;
@@ -449,6 +446,7 @@ h1.countdown {
 
 /* END OF EVENTS */
 
+
 /* START OF GALLERY */
 
 .gallery {
@@ -559,7 +557,10 @@ footer {
 }
 
 /* END OF ANIMATIONS */
+
+
 /* Small screens */
+
 @media screen and (max-width: 720px) {
 
     nav div.col-lg-5 {
@@ -667,6 +668,7 @@ footer {
 
 
 /* Large screens */
+
 @media screen and (min-width: 720px) {
 
     nav div.col-lg-5 {
