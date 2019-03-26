@@ -410,7 +410,7 @@ h1.countdown {
     transition: 0.8s;
 }
 
-.event-card:hover {
+.event-card:hover, .brochure-button button:hover {
     -webkit-box-shadow: 7px 15px 37px -21px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 15px 37px -21px rgba(0,0,0,0.75);
     box-shadow: 7px 15px 37px -21px rgba(0,0,0,0.75);
@@ -442,6 +442,25 @@ h1.countdown {
 
 .event-card button:hover {
     background-color: rgba(153, 168, 177, 0.678);
+}
+
+.brochure-button {
+    margin: 10vh auto;
+}
+
+.brochure-button button{
+    font-size: 2vh;
+    padding: 2vh 2vw;
+    border: 0;
+    border-radius: 22px;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    background-color: rgb(247, 9, 155);
+    -webkit-box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+    box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+    transition: 0.8s;
 }
 
 /* END OF EVENTS */
@@ -563,6 +582,10 @@ footer {
 
 @media screen and (max-width: 720px) {
 
+    .loader img {
+        width: 180px;
+    }
+
     nav div.col-lg-5 {
         display: none;
     }
@@ -578,10 +601,6 @@ footer {
 
     nav ul {
         padding: 22vh 0px 32vh 0px;
-    }
-
-    .loader img {
-        width: 250px;
     }
 
     .header .hamburger {
@@ -670,6 +689,10 @@ footer {
 /* Large screens */
 
 @media screen and (min-width: 720px) {
+
+    .loader img {
+        width: 300px;
+    }
 
     nav div.col-lg-5 {
         max-height: 100vh;
