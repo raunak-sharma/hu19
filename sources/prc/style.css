@@ -60,3 +60,10 @@ h2 {
     animation: fadeOut 1s;
     font-size:2em;
 }
+@media screen and (min-width: 720px) 
+		{
+			td:nth-child(odd)
+			{
+				padding-left : 5em;
+			}
+		}
