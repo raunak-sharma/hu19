@@ -34,7 +34,7 @@ background-size: 800% 800%;
 .elist {
     margin: auto;
     margin-top: 5em;
-    margin-bottom:2em;
+    margin-bottom:3em;
     border: 1px sotrd black;
     filter: alpha(opacity=60);
     width: auto;
