@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.event-head {
+    width: 100%;
+    text-align: center;
+    margin: 10vh auto;
+    font-size: 8vh;
+    font-family: 'Playfair Display', serif;
+}
+
+.elist {
+    border: 0;
+    margin: 0 auto;
+    width: auto;
+    transition: 0.8s;
+}
+
+td {
+    font-size:20px;
+    padding:1em;
+}
+
+.event-date h2 {
+    margin: 5vh;
+    font-family: 'Playfair Display', serif;
+}
+
+.each-day {
+    padding: 5vh;
+    margin: 5vh 2vw;
+    color: white;
+    font-weight: 400;
+    font-family: 'Cardo', serif;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.each-day:hover {
+    color: black;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.fa-arrow-left {
+    color: black;
+    font-size: 5vh;
+    position: absolute;
+    top : 5vh;
+    left : 5vw;
+}
+
+@media screen and (min-width: 720px) {
+    td:nth-child(odd) {
+        padding-left : 6em;
+    }
+}
