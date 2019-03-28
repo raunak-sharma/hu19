@@ -497,7 +497,9 @@ h1.countdown {
     margin: 0;
     min-height: 100vh;
     padding: 10vh 0;
-    background-color: rgb(47, 201, 137);
+    background: #396afc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100%;
 }
 
@@ -513,7 +515,7 @@ h1.countdown {
 
 .team-header h1 {
     margin: 0 auto 10vh auto;
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 8vh;
     font-weight: 400;
     font-family: 'Playfair Display', serif;
@@ -522,7 +524,7 @@ h1.countdown {
 
 .team-adhoc h1 {
     margin: 8vh auto;
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 4vh;
     font-weight: 400;
     font-family: 'Playfair Display', serif;
@@ -539,16 +541,22 @@ h1.countdown {
 }
 
 .adhoc .card {
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
     font-family: 'Playfair Display', serif;
-    background-color: #ffffff;
+    background-color: #ffffffce;
     transition: 0.5s;
+    border: #0026ff 5px solid;
     box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
     -webkit-box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+}
+
+.adhoc .card img {
+    border: #0026ff 5px solid;
 }
 
 .adhoc .card:hover {
@@ -941,6 +949,7 @@ footer {
     }
 
     .timing-section {
+
         background-position-x: 560px;
         background-position-y: -350px;
     }
@@ -962,7 +971,8 @@ footer {
     .adhoc .card {
         min-width: 11%;
         height: 28vh;
-        margin: 5vh 5vw;
+        width: 16%;
+        margin: 10vh 5vw;
         padding-top: 10vh;
         padding-bottom: 0vh;
         padding-left: 2vw;
@@ -970,25 +980,32 @@ footer {
         display: inline-block;
     }
 
+    .adhoc .card:nth-child(4) h2 {
+        margin: 0;
+        margin-bottom: 0vh;
+    }
+
     .card img {
         border-radius: 50%;
         position: absolute;
-        left: 22%;
+        left: 26%;
         top: -60px;
         width: 14vh;
         height: 14vh;
         margin: 0 auto;
+        border: #2948ff 5px solid;
         box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
         -moz-box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
         -webkit-box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
     }
 
     .card h1 {
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
 
     .card h2 {
-        font-size: 2.5vh;
+        font-size: 2vh;
+        margin-bottom: 5vh;
     }
 
     .card h3 {
