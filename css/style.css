@@ -480,12 +480,11 @@ h1.countdown {
 }
 
 .gallery-header {
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
     color: rgba(0, 17, 255, 0.842);
-    font-size: 11vh;
+    font-size: 8vh;
     font-weight: 700;
     font-family: 'Playfair Display', serif;
-    padding-bottom: 5vh;
     text-align: center;
 }
 
@@ -662,7 +661,7 @@ footer {
 
     .header .hamburger {
         top: 20px;
-        left: 15px;
+        right: 15px;
     }
 
     .header-content .header-logo img {
@@ -776,7 +775,7 @@ footer {
 
     .header .hamburger {
         top: 50px;
-        left: 50px;
+        right: 50px;
     }
 
     .header-content .header-logo img {
