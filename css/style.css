@@ -382,14 +382,14 @@ h1.countdown {
     transition: 0.8s;
 }
 
-
 #details-eve div:nth-child(2):hover {
-    color: white;
+    color: rgb(30, 255, 0);
     background-color: rgb(53, 53, 53);
 }
 
 #details-eve div:nth-child(3):hover {
-    background-color: blue;
+    color: white;
+    background-color: rgb(4, 187, 132);
 }
 
 #details-eve div:nth-child(4):hover {
@@ -428,7 +428,7 @@ h1.countdown {
 }
 
 .event-card button:hover {
-    color: white;
+    color: rgba(235, 247, 253, 0.678);
     background-color: rgba(5, 5, 5, 0.884);
 }
 
@@ -452,12 +452,12 @@ h1.countdown {
     font-weight: 400;
     font-family: 'Cardo', serif;
     color: rgb(255, 255, 255);
-    background-color: rgb(247, 9, 155);
+    background-color: rgb(33, 9, 247);
     transition: 0.8s;
 }
 
 .brochure-button button:hover, .register-button button:hover {
-    background-color: #ff5858;
+    background-color: #f04c4c;
     color: black;
     transform: scale(1.1);
 }
@@ -490,6 +490,82 @@ h1.countdown {
 
 /* END OF GALLERY */
 
+
+/* START OF TEAM */
+
+.team-section {
+    margin: 0;
+    min-height: 100vh;
+    padding: 10vh 0;
+    background-color: rgb(47, 201, 137);
+    width: 100%;
+}
+
+.team-header {
+    padding: 0;
+    width: 100%;
+}
+
+.team-links {
+    font-size: 1vh;
+    color: red;
+}
+
+.team-header h1 {
+    margin: 0 auto 10vh auto;
+    color: rgb(0, 0, 0);
+    font-size: 8vh;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.team-adhoc h1 {
+    margin: 8vh auto;
+    color: rgb(0, 0, 0);
+    font-size: 4vh;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.adhoc {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.adhoc .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    background-color: #ffffff;
+    transition: 0.5s;
+    box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+}
+
+.adhoc .card:hover {
+    box-shadow: 7px 15px 37px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 15px 37px -21px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 15px 37px -21px rgba(0,0,0,0.75);
+}
+
+.team-links i.fab {
+    padding: 2px;
+    color: black;
+    font-size: 22px;
+}
+
+/* END OF TEAM */
+
+
 /* START OF CONTACT US */
 
 .contact-us {
@@ -510,6 +586,7 @@ h1.countdown {
 }
 
 .contact-desc h1 {
+    margin-top: 5vh;
     text-align: center;
     width: 100%;
     font-size: 8vh;
@@ -739,6 +816,43 @@ footer {
         text-align: center;
     }
 
+    .adhoc .card {
+        width: 80%;
+        min-height: 8vh;
+        margin: 11vh 0vw;
+        padding-top: 12vh;
+        display: inline-block;
+    }
+
+    .card img {
+        border-radius: 50%;
+        position: absolute;
+        left: 25%;
+        top: -10vh;
+        width: 21vh;
+        height: 21vh;
+        margin: 0 auto;
+        box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+        -moz-box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+    }
+
+    .card h1 {
+        font-size: 4vh;
+    }
+
+    .card h2 {
+        font-size: 3.5vh;
+    }
+
+    .card h3 {
+        font-size: 3vh;
+    }
+
+    .card h4 {
+        font-size: 2.5vh;
+    }
+
 }
 
 
@@ -844,4 +958,45 @@ footer {
     .gallery {
         padding: 10vh;
     }
+
+    .adhoc .card {
+        min-width: 11%;
+        height: 28vh;
+        margin: 5vh 5vw;
+        padding-top: 10vh;
+        padding-bottom: 0vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        display: inline-block;
+    }
+
+    .card img {
+        border-radius: 50%;
+        position: absolute;
+        left: 22%;
+        top: -60px;
+        width: 14vh;
+        height: 14vh;
+        margin: 0 auto;
+        box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+        -moz-box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 7px 15px 37px -12px rgba(0,0,0,0.75);
+    }
+
+    .card h1 {
+        font-size: 3vh;
+    }
+
+    .card h2 {
+        font-size: 2.5vh;
+    }
+
+    .card h3 {
+        font-size: 2vh;
+    }
+
+    .card h4 {
+        font-size: 2vh;
+    }
+
 }
