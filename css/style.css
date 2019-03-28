@@ -985,8 +985,8 @@ footer {
     }
 
     .card img {
-        width: 22vh;
-        height: 22vh;
+        width: 100%;
+        height: 225px;
         margin: 5vh auto;
         border-radius: 50%;
         border: #2948ff 5px solid;
