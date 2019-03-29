@@ -70,6 +70,15 @@
             navbar.classList.toggle("nav-show");
         });
 
+        let navLinks = document.querySelectorAll("nav ul li");
+        for(let i = 0; i < navLinks.length; i++) {
+            navLinks[i].addEventListener("click", function () {
+                hamburger.classList.toggle("is-active");
+                navbar.classList.toggle("nav-hidden");
+                navbar.classList.toggle("nav-show");
+            });
+        }
+
     });
 
 })();
