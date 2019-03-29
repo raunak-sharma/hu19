@@ -571,6 +571,32 @@ h1.countdown {
     font-size: 22px;
 }
 
+.show-no {
+    display: none;
+}
+
+.show-yes {
+    display: block;
+}
+
+#show-more-collapse {
+    background-color: rgba(14, 64, 202, 0.61);
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 22px;
+    font-size: 2.5vh;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 7px 15px 37px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 15px 37px -21px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 15px 37px -21px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+
+#show-more-collapse:hover {
+    background-color: rgba(119, 72, 248, 0.568);
+    transform: scale(1.1);
+}
+
 /* END OF TEAM */
 
 

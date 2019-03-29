@@ -79,6 +79,20 @@
             });
         }
 
+        let showMoreButton =  document.querySelector('#show-more-collapse');
+        showMoreButton.addEventListener("click", function () {
+            let show_button = document.querySelector('.always');
+            console.log(show_button);
+            show_button.classList.toggle("show-no");
+            show_button.classList.toggle("show-yes");
+            if(show_button.classList.contains("show-yes")) {
+                showMoreButton.innerHTML = "Show Less";
+            }
+            else {
+                showMoreButton.innerHTML = "Show More";
+            }
+        })
+
     });
 
 })();
