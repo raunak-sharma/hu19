@@ -1,10 +1,10 @@
 (function () {
 
     // to hide the loader
-    setTimeout(function () {
+    window.addEventListener("load", function () {
         const loader = document.querySelector(".loader");
         loader.className += " hidden";
-    }, 5000);
+    });
 
     document.addEventListener('DOMContentLoaded', function () {
 
