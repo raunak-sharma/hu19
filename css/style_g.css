@@ -1,33 +1,95 @@
+@font-face {
+    font-family: signature;
+    src: url('../sources/fonts/signature/BrittanySignature.otf');
+}
+
+@font-face {
+    font-family: facon;
+    src: url('../sources/fonts/facon/Facon.ttf');
+}
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #020305;
 }
 
-i .fa-arrow-left {
+i {
+    z-index: 99999;
+    position: fixed;
+    top: 55px;
+    left: 35px;
+    font-size: 5vh;
     color: white;
+    font-size: 4vh;
     font-family: 'Playfair Display', serif;
 }
 
-.tbd {
+.guest-header {
     margin: 0;
-    width: 100%;
-    height: 100vh;
-    color: white;
-    font-size: 5vh;
-    text-align: center;
+    width: 100vw;
+    min-height: 45vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    font-family: 'Playfair Display', serif;
 }
 
-.tbd h1 {
+.guest-header p {
+    color: white;
+    font-size: 22vh;
+    text-align: center;
+    font-weight: 400;
+    font-size: 8vh;
+    font-family: signature;
+}
+
+.monali-t {
+    min-height: 65vh;
+}
+
+.monali-t img {
+    width: 100%;
+    height: 100%;
+}
+
+.monali-t h1 {
     margin: 0;
 }
 
-a:visited {
-    text-decoration: none;
+
+.monali-t-img {
+    padding: 0;
+}
+
+.monali-t-desc {
+    background-color: #020305;
+    text-align: center;
+    font-size: 11vh;
+    padding: 0;
+    color: rgb(187, 42, 42);
+    font-family: facon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.8s;
+}
+
+.monali-t-desc:hover {
     color: white;
+}
+
+.monali-t-desc h1 {
+    font-size: 11vh;
+}
+
+.many-more {
+    margin: 6vh auto;
+    min-height: 20vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: signature;
 }

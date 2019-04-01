@@ -39,8 +39,8 @@
 
         /* END OF ANIMATION DEFINITIONS */
 
-        // timestamp for Monday, 1 April 2019 03:30:00 = 1554089400
-        let eventTime = 1554089400;
+        // timestamp for 6 April 2019 23:59:59 = 1554575399
+        let eventTime = 1554575399;
         let eventNow = Math.floor(new Date().getTime()/1000.0);
         let diffTime = eventTime - eventNow;
         let duration = moment.duration(diffTime*1000, 'milliseconds');
@@ -52,12 +52,12 @@
 
             document.getElementsByClassName('countdown')[0].innerHTML =
             "<p style=\"font-family:'lmonoULight'\">"
-                + "<span style=\"font-size: 4vh\">Starts in </span></br>"
+                + "<span style=\"font-size: 4vh\">Ends in </span></br>"
                 + "<span style='font-size: 8vh;'>"
                 + days + "</span> Days </br> <span style='font-size: 8vh;'>"
-                + hrs + "</span> HRS</br> <span style='font-size: 8vh;'>"
-                + mins + "</span> MINS</br> <span style='font-size: 8vh;'>"
-                + secs + "</span> SECS</p>";
+                + (hrs) + "</span> HRS</br> <span style='font-size: 8vh;'>"
+                + (mins) + "</span> MINS</br> <span style='font-size: 8vh;'>"
+                + (secs) + "</span> SECS</p>";
         }, 1000);
 
 
@@ -82,7 +82,6 @@
         let showMoreButton =  document.querySelector('#show-more-collapse');
         showMoreButton.addEventListener("click", function () {
             let show_button = document.querySelector('.always');
-            console.log(show_button);
             show_button.classList.toggle("show-no");
             show_button.classList.toggle("show-yes");
             if(show_button.classList.contains("show-yes")) {

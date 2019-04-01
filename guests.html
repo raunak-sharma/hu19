@@ -4,23 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HU19 | Guests</title>
+    <title>HU19 | Guests Performers</title>
     <link rel="icon" type="image/ico" href="sources/imgs/logo.png" />
 
     <!-- font awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <!-- imported fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cardo|Playfair+Display:400,700,900" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style_g.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script>
+        // to hide the loader
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        });
+    </script>
 
 </head>
 <body>
-    <div class="tbd">
-        <h1>To Be Announced Soon !</h1>
-        <br>
-        <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+    <div class="loader">
+        <img src="./sources/imgs/loader.gif" alt="">
     </div>
+
+    <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+    <div class="container-fluid">
+        <div class="row guest-header">
+            <div class="col-lg-12" style="padding: 0;">
+                <p>Guest Performances</p>
+            </div>
+        </div>
+
+        <div class="row monali-t">
+            <div class="col-lg-6 monali-t-desc">
+                <h1>Monali Thakur</h1>
+                <h2>6th April, 2019</h2>
+                <h2>SAC Ground, HITK Campus</h2>
+            </div>
+            <div class="col-lg-6 monali-t-img">
+                <img src="./sources/imgs/monaliT.jpg" alt="Monali Thakur">
+            </div>
+        </div>
+
+        <div class="many-more">
+            <h1>And More ....</h1>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row foot1" style="background-color: black;">
+            <div class="col-lg-4">
+                <h2 class="footer-head1"><img src="./sources/imgs/logo/logo_qp5gce_c_scale,w_811-min.png" alt="HU19 Logo" width="85px">HU19</h2>
+                <p style="font-size: 2.5vh;"></br>
+                &ldquo; Where possibilities</br>are endless.&rdquo;</p>
+            </div>
+            <div class="col-lg-4">
+                <h2 class="footer-head">Important Links</h2>
+                <br>
+                <a href="./index.html#details-c"><p>About Us</p></a>
+                <a href="./index.html#details-eve"><p>Events</p></a>
+                <a href="./index.html#gal-head"><p>Gallery</p></a>
+                <a href="./index.html#team-sec"><p>Our Team</p></a>
+            </div>
+            <div class="col-lg-4">
+                <h2 class="footer-head">Support & Feedback</h2>
+                <br>
+                <p>For any queries regarding participation, sponsorship, schedule, etc. email us at <a href="">heritageutsav2019@gmail.com</a></p>
+                <p>Any constructive feedback and/or suggestion will also be appreciated.</p>
+                <span class="footerLogo"><img src="./sources/imgs/logo/logo_qp5gce_c_scale,w_200-min.png" alt="HU19 Logo" width="28px"> <p style="display:inline;" >| HU19</p></span>
+            </div>
+        </div>
+        <div class="row foot2">
+            <div class="col-lg-12">
+                <p>&copy; 2019 HU19 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
