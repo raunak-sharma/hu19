@@ -46,9 +46,9 @@
         let duration = moment.duration(diffTime*1000, 'milliseconds');
         let interval = 1000;
 
-        setInterval(function(){
-            duration = moment.duration(duration - interval, 'milliseconds');
-            let days = duration.days(), hrs = duration.hours(), mins = duration.minutes(), secs = duration.seconds();
+//        setInterval(function(){
+//          duration = moment.duration(duration - interval, 'milliseconds');
+            let days = 0, hrs = 0, mins = 0, secs = 0;
 
             document.getElementsByClassName('countdown')[0].innerHTML =
             "<p style=\"font-family:'lmonoULight'\">"
@@ -58,7 +58,7 @@
                 + (hrs) + "</span> HRS</br> <span style='font-size: 8vh;'>"
                 + (mins) + "</span> MINS</br> <span style='font-size: 8vh;'>"
                 + (secs) + "</span> SECS</p>";
-        }, 1000);
+//        }, 1000);
 
 
         // navbar toggle
